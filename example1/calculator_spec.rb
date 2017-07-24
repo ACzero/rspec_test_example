@@ -7,7 +7,7 @@ require "#{current_dir}/calculator.rb"
 
 RSpec.describe Calculator do
   describe '.is_odd?' do
-    context 'argument is odd' do
+    context 'when argument is odd' do
       it 'will not raise error' do
         expect { Calculator.is_odd?(1) }.not_to raise_error
       end
@@ -17,7 +17,7 @@ RSpec.describe Calculator do
       end
     end
 
-    context 'argument is even' do
+    context 'when argument is even' do
       it 'will not raise error' do
         expect { Calculator.is_odd?(2) }.not_to raise_error
       end
